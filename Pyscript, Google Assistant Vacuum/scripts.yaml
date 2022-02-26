@@ -1,0 +1,10 @@
+roborock_clean_by_rooms:
+  alias: Roborock Clean By Rooms
+  sequence:
+  - service: xiaomi_miio.vacuum_clean_segment
+    data:
+      entity_id: vacuum.roborock_s6
+      segments: "{%- set zones = namespace(zones=[]) -%} \n{%- for room in rooms -%}\n\
+        \    {%- set zones.zones = zones.zones + [state_attr(\"vacuum.roborock_s6\"\
+        , \"rooms\")[room]] -%}\n{%- endfor -%} \n{{ zones.zones }}\n"
+  mode: single
