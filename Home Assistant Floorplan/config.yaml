@@ -1,0 +1,96 @@
+
+views:
+  - title: Floorplan
+    path: floorplan
+    icon: 'mdi:floor-plan'
+    theme: lovelace-blue-blur
+    panel: true
+    cards:
+
+      - type: 'custom:floorplan-card'
+        style: >
+          ha-card {
+              max-width: 150vh;
+              margin: 0 auto;
+              background: none;
+          }
+        config:
+          image: '/local/floorplan_tutorial/floorplan_optimised.svg'
+          stylesheet: '/local/floorplan_tutorial/floorplan.css'
+          rules:
+            - entity: media_player.living_room_tv_android
+              tap_action: more-info
+              state_action:
+                action: call-service
+                service: floorplan.class_set
+                service_data: 'media-player-tv media-player-${entity.state}'
+
+            - entities:
+                - binary_sensor.kitchen_motion
+              state_action:
+                action: call-service
+                service: floorplan.class_set
+                service_data: 'motion motion-${entity.state}'
+
+
+            - entities:
+                - light.master_bedroom_main
+                - light.kitchen_main
+                - light.laundry_main
+                - light.dining_main
+                - light.living_room_main
+                - light.kids_bedroom_main
+                - light.bathroom_main
+                - light.study_main
+                - light.master_bedroom_lamp_a
+              tap_action: false
+              state_action:
+                action: call-service
+                service: floorplan.class_set
+                service_data: 'light-${entity.state}'
+
+            - entities:
+                - light.master_bedroom_main
+                - light.kitchen_main
+                - light.laundry_main
+                - light.dining_main
+                - light.living_room_main
+                - light.kids_bedroom_main
+                - light.bathroom_main
+                - light.study_main
+                - light.master_bedroom_lamp_a
+              tap_action:
+                action: 'toggle'
+              hold_action:
+                action: more-info
+              state_action:
+                action: call-service
+                service: floorplan.style_set
+                service_data:
+                  element: "${entity.entity_id.replace('light.', 'light_overlay.')}"
+                  style: |
+                    >
+                    if( entity.state !== "on" )
+                        return "display: none;";
+                    let hue = 0;
+                    let sat = 0;
+                    if( entity.attributes.hs_color )
+                    {
+                        hue = entity.attributes.hs_color[0];
+                        sat = entity.attributes.hs_color[1];
+                    }
+                    if( sat < 10 )
+                    {
+                      return `
+                        display: block;
+                        filter:
+                          brightness(calc( ${entity.attributes.brightness} / 255));`
+                    }
+                    return `
+                      display: block;
+                      filter:
+                        sepia(100%)
+                        hue-rotate(calc( ${hue}deg - 55deg ))
+                        saturate(calc( ${sat}% * 2 ))
+                        brightness(calc( ${entity.attributes.brightness} / 255));
+                    `
