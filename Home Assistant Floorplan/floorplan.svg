@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="floorplan.svg">
+  <style
+     id="style833"></style>
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.4835009"
+     inkscape:cx="761.74248"
+     inkscape:cy="415.05588"
+     inkscape:document-units="mm"
+     inkscape:current-layer="area.study"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Background"
+     inkscape:groupmode="layer"
+     id="background"
+     style="display:inline">
+    <image
+       sodipodi:absref="H:\config\www\floorplan_tutorial\floorplan.png"
+       xlink:href="floorplan.png"
+       href="/local/floorplan_tutorial/floorplan.png"
+       y="0"
+       x="0"
+       id="main-background"
+       preserveAspectRatio="none"
+       height="1080"
+       width="1920" />
+    <g
+       inkscape:groupmode="layer"
+       id="light-overlays"
+       inkscape:label="Light Overlays"
+       style="display:inline">
+      <image
+         sodipodi:absref="H:\config\www\floorplan_tutorial\floorplan0001.png"
+         xlink:href="floorplan0001.png"
+         href="/local/floorplan_tutorial/floorplan0001.png"
+         y="0"
+         x="0"
+         id="light_overlay.master_bedroom_lamp_a"
+         preserveAspectRatio="none"
+         height="1080"
+         width="1920" />
+      <image
+         sodipodi:absref="H:\config\www\floorplan_tutorial\floorplan0002.png"
+         xlink:href="floorplan0002.png"
+         href="/local/floorplan_tutorial/floorplan0002.png"
+         y="0"
+         x="0"
+         id="light_overlay.master_bedroom_main"
+         preserveAspectRatio="none"
+         height="1080"
+         width="1920" />
+      <image
+         sodipodi:absref="H:\config\www\floorplan_tutorial\floorplan0003.png"
+         xlink:href="floorplan0003.png"
+         href="/local/floorplan_tutorial/floorplan0003.png"
+         y="0"
+         x="0"
+         id="light_overlay.study_main"
+         preserveAspectRatio="none"
+         height="1080"
+         width="1920" />
+      <image
+         sodipodi:absref="H:\config\www\floorplan_tutorial\floorplan0004.png"
+         xlink:href="floorplan0004.png"
+         href="/local/floorplan_tutorial/floorplan0004.png"
+         y="0"
+         x="0"
+         id="light_overlay.laundry_main"
+         preserveAspectRatio="none"
+         height="1080"
+         width="1920" />
+      <image
+         sodipodi:absref="H:\config\www\floorplan_tutorial\floorplan0005.png"
+         xlink:href="floorplan0005.png"
+         href="/local/floorplan_tutorial/floorplan0005.png"
+         y="0"
+         x="0"
+         id="light_overlay.kitchen_main"
+         preserveAspectRatio="none"
+         height="1080"
+         width="1920" />
+      <image
+         sodipodi:absref="H:\config\www\floorplan_tutorial\floorplan0006.png"
+         xlink:href="floorplan0006.png"
+         href="/local/floorplan_tutorial/floorplan0006.png"
+         y="0"
+         x="0"
+         id="light_overlay.kids_bedroom"
+         preserveAspectRatio="none"
+         height="1080"
+         width="1920" />
+      <image
+         sodipodi:absref="H:\config\www\floorplan_tutorial\floorplan0007.png"
+         xlink:href="floorplan0007.png"
+         href="/local/floorplan_tutorial/floorplan0007.png"
+         y="0"
+         x="0"
+         id="light_overlay.living_room_main"
+         preserveAspectRatio="none"
+         height="1080"
+         width="1920" />
+      <image
+         sodipodi:absref="H:\config\www\floorplan_tutorial\floorplan0008.png"
+         xlink:href="floorplan0008.png"
+         href="/local/floorplan_tutorial/floorplan0008.png"
+         y="0"
+         x="0"
+         id="light_overlay.dining_main"
+         preserveAspectRatio="none"
+         height="1080"
+         width="1920" />
+      <image
+         sodipodi:absref="H:\config\www\floorplan_tutorial\floorplan0009.png"
+         xlink:href="floorplan0009.png"
+         href="/local/floorplan_tutorial/floorplan0009.png"
+         y="0"
+         x="0"
+         id="light_overlay.bathroom_main"
+         preserveAspectRatio="none"
+         height="1080"
+         width="1920" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="areas"
+     inkscape:label="Areas"
+     style="display:inline">
+    <g
+       inkscape:groupmode="layer"
+       id="area.master_bedroom"
+       inkscape:label="Master Bedroom">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 1212.676,774.29578 -7.3943,-4.40141 v -32.39437 l -78.3451,-55.80986 -20.4225,16.90141 -47.8873,-34.15493 -5.6338,3.69718 -0.5282,14.26057 -69.19015,-47.53521 0.35211,-18.30986 -6.8662,-4.0493 -68.30985,51.93662 0.35211,17.25352 -65.66902,50.35211 -1.23239,-13.55633 -2.8169,-2.46479 -86.44366,65.84507 235.03521,168.66197 7.04225,-5.28169 -0.52817,-31.69014 48.94366,-37.67606 18.1338,13.20423 13.3383,-9.84352 c 0,0 -0.4811,-11.74205 2.5999,-12.62233 1.3875,-0.2238 3.7767,1.11054 3.8654,4.40998 0.053,1.95986 2.7424,1.41724 2.7424,1.41724 z"
+         id="path896"
+         sodipodi:nodetypes="ccccccccccccccccccccccccscc" />
+      <use
+         id="light.master_bedroom_main"
+         xlink:href="#path896" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="area.kitchen"
+       inkscape:label="Kitchen">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 778.31542,459.12145 41.33089,35.35533 79.67401,60.75143 68.22086,-57.76365 41.33092,25.89405 0.9959,-14.93887 11.9511,-4.48167 1.9918,-37.84515 132.4581,-101.58435 1.9918,-143.91117 -152.8745,-109.05379 -33.86142,30.87367 -0.49796,68.71883 24.40016,16.43276 0.49796,3.9837 -133.45395,103.07825 v 62.24531 z"
+         id="path902" />
+      <use
+         id="binary_sensor.kitchen_motion"
+         xlink:href="#path902" />
+      <use
+         id="light.kitchen_main"
+         xlink:href="#path902" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="area.bathroom"
+       inkscape:label="Bathroom">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 976.76056,612.5 -7.72549,-7.47554 7.72549,7.47554 -73.45654,-40.83902 -3.9837,-16.43277 -79.67401,-60.75143 -223.08721,178.27059 156.08175,109.11883 86.44366,-65.84507 2.8169,2.46479 1.23239,13.55633 65.66902,-50.35211 -0.35211,-17.25352 z"
+         id="path906" />
+      <use
+         id="light.bathroom_main"
+         xlink:href="#path906" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="area.laundry"
+       inkscape:label="Laundry">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 1151.7873,608.01224 140.9234,-107.06194 2.4898,-185.24206 -136.9397,-95.11084 -1.9918,143.91117 -132.4581,101.58435 -1.9918,37.84515 -11.9511,4.48167 -0.9959,14.93887 140.9234,100.58843 z"
+         id="path904" />
+      <use
+         id="light.laundry_main"
+         xlink:href="#path904" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="area.kids_bedroom"
+       inkscape:label="Kids Bedroom">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 1295.2005,315.70824 242.5078,175.78077 -13.943,8.96332 0.498,163.82967 -142.4173,109.55176 -154.3684,-110.54768 -1.4939,15.43684 -76.1882,-54.77588 1.9918,-15.9348 140.9234,-107.06194 z"
+         id="path908" />
+      <use
+         id="light.kids_bedroom_main"
+         xlink:href="#path908" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="area.dining"
+       inkscape:label="Dining">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 613.48983,148.39283 191.71557,-148.89079252 46.31051,0.99592504 153.87039,111.04564748 -33.86142,30.87367 -0.49796,68.71883 24.40016,16.43276 0.49796,3.9837 -133.45395,103.07825 v 62.24531 l -84.15567,62.24532 -163.82967,-126.48249 z"
+         id="path900" />
+      <use
+         id="light.dining_main"
+         xlink:href="#path900" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="area.living_room"
+       inkscape:label="Living Room">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 819.64631,494.47678 -205.16056,-161.83782 -0.99592,-184.24613 -248.4833,192.21354 13.44499,9.95925 0.49796,165.32355 217.60962,156.8582 z"
+         id="path898" />
+      <use
+         id="light.living_room_main"
+         xlink:href="#path898" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="area.study"
+       inkscape:label="Study">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 1216.0211,776.58451 0.5282,19.01408 69.8944,45.07043 c 0,0 23.9436,-7.57043 26.0563,-7.39437 2.1127,0.17606 4.0493,-4.0493 8.6268,-5.45775 3.8732,0 5.3197,2.54134 7.0422,5.2817 3.8733,6.16196 4.0493,23.59154 4.0493,23.59154 l 41.1972,30.10564 -42.0775,32.04225 0.1761,8.97887 -142.4296,110.2113 v -5.2817 l -2.4648,-2.1127 -40.8451,31.162 -158.09854,-111.26763 7.04225,-5.28169 -0.52817,-31.69014 48.94366,-37.67606 18.1338,13.20423 13.3383,-9.84352 0.4987,-8.17935 c -10e-4,-6.28511 5.4315,-4.86145 5.5957,-1.11888 0.078,1.77569 2.0591,1.97957 3.1133,2.50312 l 128.8624,-98.1501 z"
+         id="path894"
+         sodipodi:nodetypes="cccscscccccccccccccccsccc" />
+      <use
+         id="light.study_main"
+         xlink:href="#path894" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="entites"
+     inkscape:label="Entities">
+    <path
+       style="fill:none;stroke:#00adff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 555.47567,340.17503 -80.95304,63.72899 1.43534,52.53336 80.66597,-62.00659 z"
+       id="media_player.living_room_tv_android" />
+    <ellipse
+       style="fill:#000000;fill-opacity:0.160784;stroke:#00adff;stroke-width:0.3;stroke-opacity:1"
+       id="light.master_bedroom_lamp_a"
+       cx="766.47028"
+       cy="373.76193"
+       rx="22.678335"
+       ry="21.817133" />
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg8" width="1920" height="1080" version="1.1" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style id="style833"/>
+  <g id="background">
+    <image id="main-background" width="1920" height="1080" href="/local/floorplan_tutorial/floorplan.png" preserveAspectRatio="none" xlink:href="file:///H:/config/www/floorplan_tutorial/floorplan.png"/>
+    <g id="light-overlays">
+      <image id="light_overlay.master_bedroom_lamp_a" width="1920" height="1080" href="/local/floorplan_tutorial/floorplan0001.png" preserveAspectRatio="none" xlink:href="file:///H:/config/www/floorplan_tutorial/floorplan0001.png"/>
+      <image id="light_overlay.master_bedroom_main" width="1920" height="1080" href="/local/floorplan_tutorial/floorplan0002.png" preserveAspectRatio="none" xlink:href="file:///H:/config/www/floorplan_tutorial/floorplan0002.png"/>
+      <image id="light_overlay.study_main" width="1920" height="1080" href="/local/floorplan_tutorial/floorplan0003.png" preserveAspectRatio="none" xlink:href="file:///H:/config/www/floorplan_tutorial/floorplan0003.png"/>
+      <image id="light_overlay.laundry_main" width="1920" height="1080" href="/local/floorplan_tutorial/floorplan0004.png" preserveAspectRatio="none" xlink:href="file:///H:/config/www/floorplan_tutorial/floorplan0004.png"/>
+      <image id="light_overlay.kitchen_main" width="1920" height="1080" href="/local/floorplan_tutorial/floorplan0005.png" preserveAspectRatio="none" xlink:href="file:///H:/config/www/floorplan_tutorial/floorplan0005.png"/>
+      <image id="light_overlay.kids_bedroom" width="1920" height="1080" href="/local/floorplan_tutorial/floorplan0006.png" preserveAspectRatio="none" xlink:href="file:///H:/config/www/floorplan_tutorial/floorplan0006.png"/>
+      <image id="light_overlay.living_room_main" width="1920" height="1080" href="/local/floorplan_tutorial/floorplan0007.png" preserveAspectRatio="none" xlink:href="file:///H:/config/www/floorplan_tutorial/floorplan0007.png"/>
+      <image id="light_overlay.dining_main" width="1920" height="1080" href="/local/floorplan_tutorial/floorplan0008.png" preserveAspectRatio="none" xlink:href="file:///H:/config/www/floorplan_tutorial/floorplan0008.png"/>
+      <image id="light_overlay.bathroom_main" width="1920" height="1080" href="/local/floorplan_tutorial/floorplan0009.png" preserveAspectRatio="none" xlink:href="file:///H:/config/www/floorplan_tutorial/floorplan0009.png"/>
+    </g>
+  </g>
+  <g id="areas">
+    <g id="area.master_bedroom">
+      <path id="path896" d="m1212.7 774.3-7.3943-4.4014v-32.394l-78.345-55.81-20.422 16.901-47.887-34.155-5.6338 3.6972-0.5282 14.261-69.19-47.535 0.35211-18.31-6.8662-4.0493-68.31 51.937 0.35211 17.254-65.669 50.352-1.2324-13.556-2.8169-2.4648-86.444 65.845 235.04 168.66 7.0422-5.2817-0.52817-31.69 48.944-37.676 18.134 13.204 13.338-9.8435s-0.4811-11.742 2.5999-12.622c1.3875-0.2238 3.7767 1.1105 3.8654 4.41 0.053 1.9599 2.7424 1.4172 2.7424 1.4172z" fill="none" stroke="#000" stroke-width="1px"/>
+      <use id="light.master_bedroom_main" xlink:href="#path896"/>
+    </g>
+    <g id="area.kitchen">
+      <path id="path902" d="m778.32 459.12 41.331 35.355 79.674 60.751 68.221-57.764 41.331 25.894 0.9959-14.939 11.951-4.4817 1.9918-37.845 132.46-101.58 1.9918-143.91-152.87-109.05-33.861 30.874-0.49796 68.719 24.4 16.433 0.49796 3.9837-133.45 103.08v62.245z" fill="none" stroke="#000" stroke-width="1px"/>
+      <use id="binary_sensor.kitchen_motion" xlink:href="#path902"/>
+      <use id="light.kitchen_main" xlink:href="#path902"/>
+    </g>
+    <g id="area.bathroom">
+      <path id="path906" d="m976.76 612.5-7.7255-7.4755 7.7255 7.4755-73.457-40.839-3.9837-16.433-79.674-60.751-223.09 178.27 156.08 109.12 86.444-65.845 2.8169 2.4648 1.2324 13.556 65.669-50.352-0.35211-17.254z" fill="none" stroke="#000" stroke-width="1px"/>
+      <use id="light.bathroom_main" xlink:href="#path906"/>
+    </g>
+    <g id="area.laundry">
+      <path id="path904" d="m1151.8 608.01 140.92-107.06 2.4898-185.24-136.94-95.111-1.9918 143.91-132.46 101.58-1.9918 37.845-11.951 4.4817-0.9959 14.939 140.92 100.59z" fill="none" stroke="#000" stroke-width="1px"/>
+      <use id="light.laundry_main" xlink:href="#path904"/>
+    </g>
+    <g id="area.kids_bedroom">
+      <path id="path908" d="m1295.2 315.71 242.51 175.78-13.943 8.9633 0.498 163.83-142.42 109.55-154.37-110.55-1.4939 15.437-76.188-54.776 1.9918-15.935 140.92-107.06z" fill="none" stroke="#000" stroke-width="1px"/>
+      <use id="light.kids_bedroom_main" xlink:href="#path908"/>
+    </g>
+    <g id="area.dining">
+      <path id="path900" d="m613.49 148.39 191.72-148.89 46.311 0.99593 153.87 111.05-33.861 30.874-0.49796 68.719 24.4 16.433 0.49796 3.9837-133.45 103.08v62.245l-84.156 62.245-163.83-126.48z" fill="none" stroke="#000" stroke-width="1px"/>
+      <use id="light.dining_main" xlink:href="#path900"/>
+    </g>
+    <g id="area.living_room">
+      <path id="path898" d="m819.65 494.48-205.16-161.84-0.99592-184.25-248.48 192.21 13.445 9.9592 0.49796 165.32 217.61 156.86z" fill="none" stroke="#000" stroke-width="1px"/>
+      <use id="light.living_room_main" xlink:href="#path898"/>
+    </g>
+    <g id="area.study">
+      <path id="path894" d="m1216 776.58 0.5282 19.014 69.894 45.07s23.944-7.5704 26.056-7.3944 4.0493-4.0493 8.6268-5.4578c3.8732 0 5.3197 2.5413 7.0422 5.2817 3.8733 6.162 4.0493 23.592 4.0493 23.592l41.197 30.106-42.078 32.042 0.1761 8.9789-142.43 110.21v-5.2817l-2.4648-2.1127-40.845 31.162-158.1-111.27 7.0422-5.2817-0.52817-31.69 48.944-37.676 18.134 13.204 13.338-9.8435 0.4987-8.1794c-1e-3 -6.2851 5.4315-4.8614 5.5957-1.1189 0.078 1.7757 2.0591 1.9796 3.1133 2.5031l128.86-98.15z" fill="none" stroke="#000" stroke-width="1px"/>
+      <use id="light.study_main" xlink:href="#path894"/>
+    </g>
+  </g>
+  <g id="entites" stroke="#00adff">
+    <path id="media_player.living_room_tv_android" d="m555.48 340.18-80.953 63.729 1.4353 52.533 80.666-62.007z" fill="none" stroke-width="1px"/>
+    <ellipse id="light.master_bedroom_lamp_a" cx="766.47" cy="373.76" rx="22.678" ry="21.817" fill-opacity=".16078" stroke-width=".3"/>
+  </g>
+</svg>
