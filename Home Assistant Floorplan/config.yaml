@@ -1,18 +1,76 @@
-
 views:
   - title: Floorplan
     path: floorplan
     icon: 'mdi:floor-plan'
-    theme: lovelace-blue-blur
+    theme: floorplan-tutorial
     panel: true
     cards:
+    - type: horizontal-stack
+      cards:
 
+      #################################################
+      # Battery States
+      #################################################
+      - type: custom:mod-card
+        card_mod:
+          style: |
+              :host {
+                position: absolute;
+                bottom: 6px;
+                right: 6px;
+                width: 265px;
+              }
+        card:
+          type: custom:auto-entities
+          show_empty: false
+          filter:
+            include:
+              - entity_id: '/sensor\..*battery/'
+                state: "< 85"
+            exclude:
+              - entity_id: '/sensor\..*phone/'
+              - entity_id: '/sensor\.quest_2*/'
+              - entity_id: '/sensor\.panel_*/'
+              - entity_id: '/sensor\..*_temperature/'
+              - entity_id: 'sensor.ve_battery_level'
+              - attributes:
+                  show_battery_alert: false
+          card:
+            type: entities
+            theme: floorplan-tutorial
+            card_mod:
+              style: |
+                @keyframes alert {
+                  from {
+                    background: #ff000033;
+                    box-shadow: 0px 0px 0px 1px #f970709e;
+                  }
+                  to {
+                    background: #ff000011;
+                    box-shadow: 0px 0px 0px 1px #f9707055;
+                  }
+                }
+                ha-card {
+                  background: #ffffff14;
+                  height: auto !important;
+                  transform: translate( 0, 0 );
+                  
+                  animation: 1s alert linear infinite alternate;
+                  box-shadow: 0px 0px 0px 1px #f970709e;
+                  background: #ff000033;
+                }
+
+
+      #################################################
+      # Floorplan
+      #################################################
       - type: 'custom:floorplan-card'
         style: >
           ha-card {
               max-width: 150vh;
               margin: 0 auto;
               background: none;
+              box-shadow: none;
           }
         config:
           image: '/local/floorplan_tutorial/floorplan_optimised.svg'
@@ -42,7 +100,7 @@ views:
                 - light.kids_bedroom_main
                 - light.bathroom_main
                 - light.study_main
-                - light.master_bedroom_lamp_a
+                - light.master_bedroom_lamp_1
               tap_action: false
               state_action:
                 action: call-service
@@ -58,11 +116,26 @@ views:
                 - light.kids_bedroom_main
                 - light.bathroom_main
                 - light.study_main
-                - light.master_bedroom_lamp_a
+                - light.master_bedroom_lamp_1
               tap_action:
                 action: 'toggle'
-              hold_action:
+              double_tap_action:
                 action: more-info
+
+              # hold_action:
+              #   action: call-service
+              #   service: honeycomb
+              #   service_data:
+              #     buttons:
+              #       - icon: 'mdi:information-variant'
+              #         tap_action:
+              #           action: more-info
+              #       - icon: 'mdi:lightbulb'
+              #         active: true
+              #         tap_action:
+              #           action: toggle    
+
+
               state_action:
                 action: call-service
                 service: floorplan.style_set
@@ -94,3 +167,140 @@ views:
                         saturate(calc( ${sat}% * 2 ))
                         brightness(calc( ${entity.attributes.brightness} / 255));
                     `
+            - entities:
+                - light.kitchen_main
+              hold_action:
+                action: call-service
+                service: honeycomb
+                service_data:
+                  entity: light.kitchen_main
+                  buttons:
+                    - icon: 'mdi:information-variant'
+                      tap_action:
+                        action: more-info
+                    - icon: 'mdi:lightbulb'
+                      active: true
+                      tap_action:
+                        action: toggle
+                    
+      #################################################
+      # Right Speakers
+      #################################################
+      - type: custom:mod-card
+        card_mod:
+          style: |
+            :host {
+              --vertical-stack-card-margin: 5px;
+              transform: translate( 0, 0 );
+              top: calc( var(--header-height) + 5px );
+              right: 6px;
+              position: absolute;
+              width: 265px;
+              height: auto !important;
+            }
+        card:
+          type: vertical-stack
+          cards:
+            - type: custom:auto-entities
+              card:
+                type: entities
+
+              filter:
+                include:
+                  - entity_id: '/media_player\..*_speaker_group/'
+              sort:
+                method: entity_id
+                ignore_case: true
+
+            - type: custom:auto-entities
+              show_empty: false
+              card:
+                type: entities
+              filter:
+                include:
+                  - domain: media_player
+                    state: playing
+                    entity_id: '/^media_player\..*_(speaker|hub|speakers)$/'
+
+            - type: grid
+              square: false
+              columns: 2
+              cards:
+                - type: custom:button-card
+                  show_label: false
+                  show_icon: false
+                  entity: input_select.led_fx_scene
+                  color: '#ffffff45'
+                  styles:
+                    card:
+                      - height: '100%'
+                    name:
+                      - color: '#ffffff45'
+                      - font-size: 1.5em
+                      - font-style: italic
+                  state:
+                    - operator: '!='
+                      value: 'Off'
+                      styles:
+                        card:
+                          - box-shadow: '0px 0px 5px #0072ffd9'
+                  tap_action:
+                    action: more-info
+
+                - type: custom:button-card
+                  icon: mdi:video
+                  label: All Cameras
+                  show_label: false
+                  color: '#ffffff45'
+
+
+      #################################################
+      # Weather
+      #################################################
+      - type: custom:weather-card
+        entity: weather.dark_sky
+        current: true
+        details: false
+        forecast: false
+        card_mod:
+          style: |
+            :host {
+              transform: translate( 0, 0 );
+              position: absolute;
+              width: 240px;
+              left: 6px;
+              top: 22px;
+              opacity: 0.7;
+              mix-blend-mode: luminosity;
+            }
+            @media only screen and (max-width: 1280px)
+            {
+                :host {
+                    left: -22px;
+                    top: 12px;
+                }
+            }
+            ha-card {
+              background: none;
+              box-shadow: none;
+            }
+            :host .icon.bigger {
+              position: unset;
+              width: 8em;
+              height: 8em;
+              margin-top: -1em;
+            }
+            .temp, .tempc, .icon {
+                position: unset !important;
+            }
+            :host .temp {
+                font-size: 1.5em !important;
+                margin-left: -1em;
+            }
+            :host .current {
+              --primary-text-color: #606060; 
+            }
+            .tempc {
+                font-size: .9em !important;
+                vertical-align: super;
+            }
