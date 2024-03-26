@@ -65,13 +65,14 @@ views:
       # Floorplan
       #################################################
       - type: 'custom:floorplan-card'
-        style: >
-          ha-card {
-              max-width: 150vh;
-              margin: 0 auto;
-              background: none;
-              box-shadow: none;
-          }
+        card_mod:
+          style: >
+            ha-card {
+                max-width: 150vh;
+                margin: 0 auto;
+                background: none;
+                box-shadow: none;
+            }
         config:
           image: '/local/floorplan_tutorial/floorplan_optimised.svg'
           stylesheet: '/local/floorplan_tutorial/floorplan.css'
