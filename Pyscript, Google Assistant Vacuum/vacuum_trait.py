@@ -42,4 +42,4 @@ class StartStopTrait(_StartStopTrait):
                     context=data.context,
                 )
 
-        return super().execute(command, data, params, challenge)
+        return await super().execute(command, data, params, challenge)
