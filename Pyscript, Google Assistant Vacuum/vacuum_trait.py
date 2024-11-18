@@ -2,7 +2,7 @@ from homeassistant.components.google_assistant.trait import (
     StartStopTrait as _StartStopTrait,
     register_trait,
     TRAITS,
-    COMMAND_STARTSTOP
+    COMMAND_START_STOP
 )
 from homeassistant.components import (vacuum)
 
@@ -24,7 +24,7 @@ class StartStopTrait(_StartStopTrait):
     async def execute(self, command, data, params, challenge):
         """Execute a StartStop command."""
         domain = self.state.domain
-        if domain == vacuum.DOMAIN and command == COMMAND_STARTSTOP and params["start"]:
+        if domain == vacuum.DOMAIN and command == COMMAND_START_STOP and params["start"]:
             if "zone" in params or "multipleZones" in params:
                 zones = []
                 if "multipleZones" in params:
